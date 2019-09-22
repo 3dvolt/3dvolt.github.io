@@ -1,279 +1,200 @@
 <!doctype html>
 <html >
-  <head>
-    <link rel="icon" href="https://avatars2.githubusercontent.com/u/53141505?s=60&v=4">
-    <title>3D Volt</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript" src="/js/main.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
-  </head>
-  <body>
-      <div>
- <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <a class="navbar-brand" href="#">
-    <img src="https://avatars2.githubusercontent.com/u/53141505?s=60&v=4" class="rounded-circle"  alt="logo" style="width:40px;">
-  </a>
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="index.html">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="progetti.html">I miei progetti</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="collab.html">Progetti a cui ho lavorato</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="stampa3d.html">Stampa 3D</a>
-    </li>
-	<li class="nav-item">
-      <a class="nav-link" href="contact.html">Contatti</a>
-    </li>
-  </ul>
-</nav>
+   <head>
+      <link rel="icon" href="img/cropped-icon.png">
+      <title>3D Volt</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+      <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+      <script type="text/javascript" src="js/main.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+         <div class="container">
+            <a class="navbar-brand" href="#">
+            <img src="https://avatars2.githubusercontent.com/u/53141505?s=60&v=4" class="rounded-circle"  alt="logo" style="width:40px;">
+            </a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggle" aria-controls="toggle" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+            <div class="collapse navbar-collapse" id="toggle">
+               <ul class="navbar-nav m1-auto">
+                  <li class="nav-item active">
+                     <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="progetti.html">I miei progetti</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="collab.html">Progetti a cui ho lavorato</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="stampa3d.html">Stampa 3D</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="contact.html">Contatti</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header>
+         <div id="carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#carousel" data-slide-to="0" class="active"></li>
+               <li data-target="#carousel" data-slide-to="1"></li>
+               <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+               <!-- Slide One - Set the background image for this slide in the line below -->
+               <div class="carousel-item active" style="background-image: url('img/1.jpg')">
+                  <div class="carousel-caption d-none d-md-block mask rgba-black-strong">
+                     <h2 class="display-4">Servizio di Stampa 3d</h2>
+                     <p class="lead">Contattami per maggiori informazioni</p>
+                  </div>
+               </div>
+               <!-- Slide Two - Set the background image for this slide in the line below -->
+               <div class="carousel-item" style="background-image: url('img/2.jpg')">
+                  <div class="carousel-caption d-none d-md-block mask rgba-black-strong">
+                     <h2 class="display-4">Laser</h2>
+                     <p class="lead">Incisione taglio con laser</p>
+                  </div>
+               </div>
+               <!-- Slide Three - Set the background image for this slide in the line below -->
+               <div class="carousel-item" style="background-image: url('img/3.jpg')">
+                  <div class="carousel-caption d-none d-md-block mask rgba-black-strong">
+                     <h2 class="display-4">WebSite</h2>
+                     <p class="lead">TE faccio er sito </p>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+         </div>
+      </header>
+      <div class="main  main-raised ">
+         <section class="hestia-features " id="features">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-8 col-md-offset-2 hestia-features-title-area">
+                     <h2 class="hestia-title">I nostri Servizi;</h2>
+                     <h5 class="description">Possiamo fornire molteplici servizi inerenti alla stampa 3d e assistenza ai computer</h5>
+                  </div>
+               </div>
+               <div class="hestia-features-content">
+                  <div class="row">
+                     <div class="col-xs-12 col-md-4 feature-box">
+                        <div class="hestia-info">
+                           <a href="#">
+                              <div class="icon" style="color:#e91e63">
+                                 <i class="fa fa-diamond"></i>
+                              </div>
+                              <h4 class="info-title">Stampa 3d</h4>
+                           </a>
+                           <p>Hai un progetto ma non sai come realizzarlo? Forniscici il file .stl o .obj dell'oggetto e spiegaci le tue esigenze, verrai contattato per il preventivo.</p>
+                        </div>
+                     </div>
+                     <div class="col-xs-12 col-md-4 feature-box">
+                        <div class="hestia-info">
+                           <a href="#">
+                              <div class="icon" style="color:#00bcd4">
+                                 <i class="fa fa-check"></i>
+                              </div>
+                              <h4 class="info-title">Progettazione</h4>
+                           </a>
+                           <p>Hai un idea ma non hai le capacità di realizzarlo? non temere, contattaci via email e spiegaci la tua idea, progetteremo per te il pezzo che avevi in mente.</p>
+                        </div>
+                     </div>
+                     <div class="col-xs-12 col-md-4 feature-box">
+                        <div class="hestia-info">
+                           <a href="#">
+                              <div class="icon" style="color:#4caf50">
+                                 <i class="fa fa-support"></i>
+                              </div>
+                              <h4 class="info-title">Sito Web</h4>
+                           </a>
+                           <p>Hai un piccola-media attività e vuoi essere più conosciuto? Affidaci il compito di progettare il tuo sito</p>
+                        </div>
+                     </div>
+                     <div class="col-xs-12 col-md-4 feature-box">
+                        <div class="hestia-info">
+                           <a href="#">
+                              <div class="icon" style="color:#727272">
+                                 <i class="fa fa-puzzle-piece"></i>
+                              </div>
+                              <h4 class="info-title">Riparazione stampanti 3d</h4>
+                           </a>
+                           <p>Hai acquistato una stampante 3d, ma non riesci ancora a farla funzionare.. tranquillo, è normale, soprattutto se si è alle prime armi, un servizio che offriamo è proprio quello di assistenza, sia di tipo hardware che software.</p>
+                        </div>
+                     </div>
+                     <div class="col-xs-12 col-md-4 feature-box">
+                        <div class="hestia-info">
+                           <a href="#">
+                              <div class="icon" style="color:#eeee22">
+                                 <i class="fa fa-heart"></i>
+                              </div>
+                              <h4 class="info-title"> Realizza le tue idee</h4>
+                           </a>
+                           <p>Hai in mente un prodotto, magari innovativo, ma non hai le capacità o il tempo di realizzarlo, Un servizio ulteriore è dedicato a questo, progettazione e realizzazione delle tue idee</p>
+                        </div>
+                     </div>
+                     <div class="col-xs-12 col-md-4 feature-box">
+                        <div class="hestia-info">
+                           <a href="#">
+                              <div class="icon" style="color:#4ccc1a">
+                                 <i class="fa fa-anchor"></i>
+                              </div>
+                              <h4 class="info-title">Consulenza</h4>
+                           </a>
+                           <p>Vorresti avvicinarti al mondo della stampa 3d ma non sai da che parte cominciare? Non preoccuparti possiamo indirizzarti sulla scelta più conveniente per la tua attività in base alle tue esigenze</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
       </div>
-	  <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
-  <!--Indicators-->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-2" data-slide-to="1"></li>
-    <li data-target="#carousel-example-2" data-slide-to="2"></li>
-  </ol>
-  <!--/.Indicators-->
-  <!--Slides-->
-  <div class="carousel-inner" role="listbox">
-    <div class="carousel-item active">
-      <div class="view">
-        <img class="d-block w-100" src="/img/1.jpg"
-          alt="First slide">
-        <div class="mask rgba-black-light"></div>
-      </div>
-      <div class="carousel-caption">
-        <h3 class="h3-responsive">Light mask</h3>
-        <p>First text</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <!--Mask color-->
-      <div class="view">
-        <img class="d-block w-100" src="/img/2.jpg"
-          alt="Second slide">
-        <div class="mask rgba-black-strong"></div>
-      </div>
-      <div class="carousel-caption">
-        <h3 class="h3-responsive">Strong mask</h3>
-        <p>Secondary text</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <!--Mask color-->
-      <div class="view">
-        <img class="d-block w-100" src="/img/3.jpg"
-          alt="Third slide">
-        <div class="mask rgba-black-slight"></div>
-      </div>
-      <div class="carousel-caption">
-        <h3 class="h3-responsive">Slight mask</h3>
-        <p>Third text</p>
-      </div>
-    </div>
-  </div>
-  <!--/.Slides-->
-  <!--Controls-->
-  <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-  <!--/.Controls-->
-</div>
-<div class="container">
-<div class="row">
-          <div class="col-md-6 text-right">
-              <h1>CHI SIAMO?</h1>
-            <p>&nbsp;</p></div>
-          <div class="col-md-6 text-left">
-              <p>Un gruppo di artigiani digitali specializzati: nella modellazione e prototipazione 3D , Incisioni e taglio con laser , Web development e design , Riparazione Smartphone, Computer e Data Recovery</p>
-            <p>&nbsp;</p></div>
-       </div>
-	   <div class="row">
-	   <div class="col-md-12 text-center">
-			<h2>Servizi:</h2>
-			</div>
-	   </div>
-      <div class="row">
-          <div class="col-md-6 text-right">
-              <p>Servizio di stampa 3D</p>
-            <p>&nbsp;</p></div>
-          <div class="col-md-6 text-left">
-              <p>Web Site  development</p>
-            <p>&nbsp;</p></div>
-       </div>
-       <div class="row">
-          <div class="col-md-6 text-right">
-              <p>CAD design</p>
-            <p>&nbsp;</p></div>
-          <div class="col-md-6 text-left">
-              <p>Laser engraving</p>
-            <p>&nbsp;</p></div>
-       </div>
-	   <div class="row">
-          <div class="col-md-6 text-right">
-              <p>Data recovery</p>
-            <p>&nbsp;</p></div>
-          <div class="col-md-6 text-left">
-              <p>Smartphone / computer repair</p>
-            <p>&nbsp;</p></div>
-       </div>
-	   
-</div>
-<div id="carousel-example-multi" class="carousel slide carousel-multi-item v-2" data-ride="carousel">
-
-  <!--Controls-->
-  <div class="controls-top">
-    <a class="btn-floating" href="#carousel-example-multi" data-slide="prev"><i
-        class="fas fa-chevron-left"></i></a>
-    <a class="btn-floating" href="#carousel-example-multi" data-slide="next"><i
-        class="fas fa-chevron-right"></i></a>
-  </div>
-  <!--/.Controls-->
-
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-multi" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-multi" data-slide-to="1"></li>
-    <li data-target="#carousel-example-multi" data-slide-to="2"></li>
-    <li data-target="#carousel-example-multi" data-slide-to="3"></li>
-    <li data-target="#carousel-example-multi" data-slide-to="4"></li>
-    <li data-target="#carousel-example-multi" data-slide-to="5"></li>
-  </ol>
-  <!--/.Indicators-->
-
-  <div class="carousel-inner v-2" role="listbox">
-
-    <div class="carousel-item active">
-      <div class="col-12 col-md-4">
-        <div class="card mb-2">
-          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (36).jpg"
-            alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title font-weight-bold">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's content.</p>
-            <a class="btn btn-primary btn-md btn-rounded">Button</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="col-12 col-md-4">
-        <div class="card mb-2">
-          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (34).jpg"
-            alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title font-weight-bold">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's content.</p>
-            <a class="btn btn-primary btn-md btn-rounded">Button</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="col-12 col-md-4">
-        <div class="card mb-2">
-          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (38).jpg"
-            alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title font-weight-bold">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's content.</p>
-            <a class="btn btn-primary btn-md btn-rounded">Button</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="col-12 col-md-4">
-        <div class="card mb-2">
-          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (29).jpg"
-            alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title font-weight-bold">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's content.</p>
-            <a class="btn btn-primary btn-md btn-rounded">Button</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="col-12 col-md-4">
-        <div class="card mb-2">
-          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (30).jpg"
-            alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title font-weight-bold">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's content.</p>
-            <a class="btn btn-primary btn-md btn-rounded">Button</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="col-12 col-md-4">
-        <div class="card mb-2">
-          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (27).jpg"
-            alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title font-weight-bold">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's content.</p>
-            <a class="btn btn-primary btn-md btn-rounded">Button</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-</div>
-<a href="progetti.html">Pagina due</a>
-
-<footer class="page-footer font-small special-color-dark pt-4">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 py-5">
-        <div class="mb-5 flex-center">
-          <a class="ig-ic" href="https://www.instagram.com/3dvolt/">
-            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-          </a>
-		  <a class="git-ic" href="https://github.com/3dvolt/">
-            <i class="fab fa-github fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-          </a>
-		  <a class="thin-ic" href="https://www.thingiverse.com/3dVolt/designs">
-            <i class="fas fa-cube fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-		  <a class="yt-ic" href="https://www.youtube.com/channel/UCJb40kTKsTMtbw-VCqrC3Gg">
-            <i class="fab fa-youtube fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="footer-copyright text-center py-3">© 2018 Copyright:
-    <a>3Dvolt</a>
-  </div>
-</footer>  
-  </body>
+      <a href="progetti.html">Pagina due</a>
+	  
+	 
+      <footer class="page-footer font-small special-color-dark pt-4">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 py-5">
+                  <div class="mb-5 flex-center">
+                     <a class="ig-ic" href="https://www.instagram.com/3dvolt/">
+                     <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                     </a>
+                     <a class="git-ic" href="https://github.com/3dvolt/">
+                     <i class="fab fa-github fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                     </a>
+                     <a class="thin-ic" href="https://www.thingiverse.com/3dVolt/designs">
+                     <i class="fas fa-cube fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                     </a>
+                     <a class="yt-ic" href="https://www.youtube.com/channel/UCJb40kTKsTMtbw-VCqrC3Gg">
+                     <i class="fab fa-youtube fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer-copyright text-center py-3">© 2018 Copyright:
+            <a>3Dvolt</a>
+         </div>
+      </footer>
+   </body>
 </html>
