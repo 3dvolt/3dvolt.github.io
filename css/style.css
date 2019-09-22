@@ -157,8 +157,8 @@ div.wpforms-container .wpforms-form input[type=url],
 div.wpforms-container .wpforms-form input[type=week],
 div.wpforms-container .wpforms-form select,
 div.wpforms-container .wpforms-form textarea {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#9c27b0), to(#9c27b0)), -webkit-gradient(linear, left top, left bottom, from(#d2d2d2), to(#d2d2d2));
-  background-image: -webkit-linear-gradient(#9c27b0, #9c27b0), -webkit-linear-gradient(#d2d2d2, #d2d2d2);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#edd434), to(#edd434)), -webkit-gradient(linear, left top, left bottom, from(#d2d2d2), to(#d2d2d2));
+  background-image: -webkit-linear-gradient(#edd434, #edd434), -webkit-linear-gradient(#d2d2d2, #d2d2d2);
   background-image: linear-gradient(#9c27b0, #9c27b0), linear-gradient(#d2d2d2, #d2d2d2);
   float: none;
   border: 0;
@@ -1007,7 +1007,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #9c27b0;
+  color: #edd434;
 }
 a:hover, a:focus {
   color: #89229b;
@@ -1086,7 +1086,7 @@ h2.hestia-title {
 }
 
 .text-primary {
-  color: #9c27b0;
+  color: #edd434;
 }
 
 .text-danger {
@@ -1509,7 +1509,7 @@ button:hover, button:focus, button:active, input[type="submit"]:hover, input[typ
 }
 
 .btn.btn-primary.btn-simple, .btn.btn-primary.btn-simple:hover, .btn.btn-primary.btn-simple:focus, .btn.btn-primary.btn-simple:active {
-  color: #9c27b0;
+  color: #edd434;
   background-color: transparent;
 }
 
@@ -1533,7 +1533,7 @@ input#searchsubmit,
 .open > .btn.btn-primary.dropdown-toggle:focus,
 .open > .btn.btn-primary.dropdown-toggle:hover {
   color: #fff;
-  background-color: #9c27b0;
+  background-color: #edd434;
 }
 
 .btn.btn-danger {
@@ -2144,7 +2144,7 @@ select {
   background-color: #fff;
 }
 .label.label-primary {
-  background-color: #9c27b0;
+  background-color: #edd434;
 }
 .label.label-success {
   background-color: #4caf50;
@@ -3108,9 +3108,9 @@ body.admin-bar .navbar {
   background-color: #eee;
 }
 .pagination span.current, .pagination span.current:focus, .pagination span.current:hover {
-  border-color: #9c27b0;
+  border-color: #edd434;
   color: #fff;
-  background-color: #9c27b0;
+  background-color: #edd434;
   -webkit-box-shadow: 0 4px 5px 0 rgba(156, 39, 176, 0.14), 0 1px 10px 0 rgba(156, 39, 176, 0.12), 0 2px 4px -1px rgba(156, 39, 176, 0.2);
   box-shadow: 0 4px 5px 0 rgba(156, 39, 176, 0.14), 0 1px 10px 0 rgba(156, 39, 176, 0.12), 0 2px 4px -1px rgba(156, 39, 176, 0.2);
 }
@@ -4460,7 +4460,7 @@ table > tbody > tr:last-child,
 }
 
 .icon.icon-primary {
-  color: #9c27b0;
+  color: #edd434;
 }
 .icon.icon-success {
   color: #4caf50;
