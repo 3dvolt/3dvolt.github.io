@@ -38,7 +38,7 @@ html {
   font-size: 18px;
   line-height: 1.5;
   font-weight: 300;
-  color: #333;
+  color: #000;
   font-family: "Nunito Sans", sans-serif;
 }
 
@@ -74,7 +74,7 @@ p.overview {
   position: absolute;
   width: 60px;
   height: 4px;
-  background: linear-gradient(135deg, #1a9be6, #1a57e6);
+  background: linear-gradient(135deg, #FCC11B, #FCC11B);
   bottom: 0;
 }
 
@@ -208,8 +208,8 @@ p.overview {
   border-radius: 100px;
   left: 10px;
   top: 16px;
-  box-shadow: 0 0 10px 10px rgba(26, 87, 230, 0.25);
-  background-color: rgba(26, 87, 230, 0.25);
+  box-shadow: 0 0 10px 10px rgba(237, 100, 33, 0.25);
+  background-color: rgba(237, 100, 33, 0.25);
 }
 .button:hover {
   -webkit-transform: translateZ(55px);
