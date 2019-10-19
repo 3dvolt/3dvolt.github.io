@@ -373,8 +373,4 @@ p.overview {
 	.vertical.flip-containerc:hover .flipper {
 		transform: rotateX(-180deg);
 	}
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
+
