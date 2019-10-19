@@ -248,24 +248,25 @@ p.overview {
    background-size:cover;
    
    h1, p, .font-a-icons {
-      color: $black;
+	  color: white;
       font-family: $lato;
       margin-left: 30%;
       line-height: 90%;
    }   
    
    h1{
-      margin-top: 5%;    
+      margin-top: 5%;
    }
    
    p{
       font-size: 16px;
       padding-bottom: 15px;
       width: 35%;
-      border-bottom: 2px solid $black;
+      border-bottom: 2px solid $white;
    }
    
    .bold{
+	  color:white;
       font-weight: bold;
    }
    
@@ -277,7 +278,7 @@ p.overview {
       }
       
       span, .link, .fa, a{
-         color: $black;
+         color: white;
       }  
       
       .fa{
@@ -335,8 +336,8 @@ p.overview {
 	}
 
 .flip-containerc, .frontcard, .backcard {
-   height: 350px;
-   width: 600px;
+   height: 250px;
+   width: 428px;
 }
 
 .flipper {
@@ -352,12 +353,11 @@ p.overview {
 
 .frontcard {
 	z-index: 2;
-	/* firefox 31 */
 	transform: rotateY(0deg);
 }
 
 .backcard{
-   background-color: $black;
+   background-color: $white;
 }
 
 .backcard {
@@ -372,10 +372,10 @@ p.overview {
 		transform: rotateX(180deg);
 	}
 
-	.vertical.flip-container .flipper {
+	.vertical.flip-containerc .flipper {
 		transform-origin: 100% 400x; 
 	}
 
-	.vertical.flip-container:hover .flipper {
+	.vertical.flip-containerc:hover .flipper {
 		transform: rotateX(-180deg);
 	}
