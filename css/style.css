@@ -245,20 +245,14 @@ p.overview {
 
 .backcard{
    background-image:url("../img/bc-back.jpg");
-   background-size:cover;
-   
-   h1, p, .font-a-icons {
-	  color: white;
-      font-family: $lato;
-      margin-left: 30%;
-      line-height: 90%;
-   }   
+   background-size:cover;  
    
    h1{
       margin-top: 5%;
    }
    
    p{
+	  color:white;
       font-size: 16px;
       padding-bottom: 15px;
       width: 35%;
@@ -277,7 +271,7 @@ p.overview {
          margin-top: 8px;
       }
       
-      span, .link, .fa, a{
+      span{
          color: white;
       }  
       
@@ -336,8 +330,8 @@ p.overview {
 	}
 
 .flip-containerc, .frontcard, .backcard {
-   height: 250px;
-   width: 428px;
+   height: 200px;
+   width: 342px;
 }
 
 .flipper {
@@ -379,3 +373,8 @@ p.overview {
 	.vertical.flip-containerc:hover .flipper {
 		transform: rotateX(-180deg);
 	}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
