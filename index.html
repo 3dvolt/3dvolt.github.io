@@ -1,201 +1,531 @@
-<!doctype html>
-<html >
-   <head>
-      <link rel="icon" href="img/cropped-icon.png">
-      <title>3D Volt</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>3D Volt</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Main Stylesheet File -->
+  <link href="css/style-orange.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!--/ Nav Star /-->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="#page-top"><img src="https://avatars2.githubusercontent.com/u/53141505?s=60&v=4" class="rounded-circle"  alt="logo" style="width:40px;"></a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#service">Servizi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#work">Stampa 3D</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#blog">I miei progetti</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#contact">Contatti</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Intro Skew Star /-->
+  <div id="home" class="intro route bg-image" style="background-image: url(img/intro-bg.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="intro-title mb-4">3DVolt</h1>
+          <p class="intro-subtitle"><span class="text-slider-items">Stampa 3d, Laser, CNC, 3D modeling, Rendering</span><strong class="text-slider"></strong></p>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--/ Section Services Star /-->
+  <section id="service" class="services-mf route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Servizi
+            </h3>
+            <p class="subtitle-a">
+              Ecco la Lista dei servizi che offriamo
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-monitor"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Consulenza</h2>
+              <p class="s-description text-center">
+Vorresti avvicinarti al mondo della stampa 3d ma non sai da che parte cominciare? Non preoccuparti possiamo indirizzarti sulla scelta più conveniente per la tua attività in base alle tue esigenze
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-code-working"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Stampa 3D</h2>
+              <p class="s-description text-center">
+Hai un progetto ma non sai come realizzarlo? Forniscici il file .stl o .obj dell'oggetto e spiegaci le tue esigenze, verrai contattato per il preventivo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-camera"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Progettazione</h2>
+              <p class="s-description text-center">
+Hai un idea ma non hai le capacità di realizzarlo? non temere, contattaci via email e spiegaci la tua idea, progetteremo per te il pezzo che avevi in mente.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-android-phone-portrait"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Sito Web</h2>
+              <p class="s-description text-center">
+Hai un piccola-media attività e vuoi essere più conosciuto? Affidaci il compito di progettare il tuo sito
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-paintbrush"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Riparazione Stampanti 3D</h2>
+              <p class="s-description text-center">
+Hai acquistato una stampante 3d, ma non riesci ancora a farla funzionare.. tranquillo, è normale, soprattutto se si è alle prime armi, un servizio che offriamo è proprio quello di assistenza, sia di tipo hardware che software.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-stats-bars"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Marketing Services</h2>
+              <p class="s-description text-center">
+Hai in mente un prodotto, magari innovativo, ma non hai le capacità o il tempo di realizzarlo, Un servizio ulteriore è dedicato a questo, progettazione e realizzazione delle tue idee
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Section Services End /-->
+
+  <div class="section-counter paralax-mf bg-image" style="background-image: url(img/counters-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="container">
+      <div class="row">
+
+  </div>
+      </div>
+  </div>
+
+
+  <section id="work" class="portfolio-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              STAMPA 3D
+            </h3>
+            <p class="subtitle-a">
+              Ecco alcuni lavori:
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/work-1.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/work-1.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Cover personalizzata</h2>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/work-2.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/work-2.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Incisioni disegni con laser </h2>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/work-3.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/work-3.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Mavrito Lana Dere</h2>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/work-4.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/work-4.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Bindo Laro Cado</h2>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/work-5.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/work-5.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Portachiavi con logo personalizzato</h2>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/work-6.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/work-6.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Modellazione 3d pezzi di ricambio</h2>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Section Portfolio End /-->
+
+  <!--/ Section Testimonials Star /-->
+  <div class="testimonials paralax-mf bg-image" style="background-image: url(img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="https://www.instagram.com/p/BpwYpekAL45"><img src="img/eyes.jpg" alt="" class="img-fluid"></a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">Stampa 3d / Arduino</h6>
+                </div>
+              </div>
+              <h3 class="card-title"><a href="blog-single.html">Occhi per albero</a></h3>
+              <p class="card-description">
+Occhi per un albero animatronico con meccanismo di movimento delle palpebre e direzionamento occhi
+              </p>
+            </div>
+          </div>
+        </div>
+		        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="blog-single.html"><img src="img/arm.jpg" alt="" class="img-fluid"></a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">Stampa 3d / Arduino</h6>
+                </div>
+              </div>
+              <h3 class="card-title"><a href="blog-single.html">Braccio robotico 5 assi</a></h3>
+              <p class="card-description">Sivuppato per essere montato su una auto radiocomandata, questo braccio robotico si sposta su 5 assi con servo motori SG90 e MG996R.
+		Tutto controllato da due Arduino e un Raspberry.
+              </p>
+            </div>
+          </div>
+        </div>
+		        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="blog-single.html"><img src="img/armor.jpg" alt="" class="img-fluid"></a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">Stampa 3d</h6>
+                </div>
+              </div>
+              <h3 class="card-title"><a href="blog-single.html">Armatura Cosplay</a></h3>
+              <p class="card-description">
+Armaura composta da scaglie verniciata e poi indossata per un cosplay
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--/ Section Blog Star /-->
+  <section id="blog" class="blog-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              I miei progetti
+            </h3>
+            <p class="subtitle-a">
+              Ecco alcuni progetti che ho sviluppato
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="blog-single.html"><img src="img/hand.jpg" alt="" class="img-fluid"></a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">Stampa 3d / Arduino</h6>
+                </div>
+              </div>
+              <h3 class="card-title"><a href="blog-single.html">Mano stampata in 3d</a></h3>
+              <p class="card-description">
+    Mano automatica stampata. Questa mano, muove le proprie dita grazie a un meccanismo di servomotori gestito da Arduino
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="blog-single.html"><img src="img/rasp.jpg" alt="" class="img-fluid"></a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">Raspberry pi</h6>
+                </div>
+              </div>
+              <h3 class="card-title"><a href="blog-single.html">Sorveglianza con Raspberry pi</a></h3>
+              <p class="card-description">
+Portale per monitorare accessi in un determinato posto con Computer Vision e intelligenta artificiale e due motori per ruotare e inclinare la videocamera
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="blog-single.html"><img src="img/dolly.jpg" alt="" class="img-fluid"></a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">Stampa 3d</h6>
+                </div>
+              </div>
+              <h3 class="card-title"><a href="blog-single.html">Stampante 3d da zero</a></h3>
+              <p class="card-description">
+Stampante basata su progetti Prusa MK2 creata da zero con pezzi di riciclo provenienti da vecchie stampanti e dispositivi
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Section Blog End /-->
+
+  <!--/ Section Contact-Footer Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="contact-mf">
+            <div id="contact" class="box-shadow-full">
+              <div class="row">
+                </div>
+                <div class="col-md-12">
+                  <div class="socials">
+                    <ul>
+                      <li><a href="https://www.instagram.com/3dvolt/"><span class="ico-circle"><i class="fab fa-instagram"></i></span></a></li>
+                      <li><a href="https://github.com/3dvolt/"><span class="ico-circle"><i class="fab fa-github"></i></span></a></li>
+                      <li><a href="https://www.thingiverse.com/3dVolt/designs"><span class="ico-circle"><i class="fas fa-cube"></i></span></a></li>
+                      <li><a href="https://www.youtube.com/channel/UCJb40kTKsTMtbw-VCqrC3Gg"><span class="ico-circle"><i class="fab fa-youtube"></i></span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="copyright-box">
+              <p class="copyright">2020 &copy; Copyright <strong>3D Volt</strong>. All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
-      <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-      <script type="text/javascript" src="js/main.js"></script>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="css/style.css">
-      <meta name="google-site-verification" content="HdRwxpiMA-h6cGHTSvYMTHvcF31mmNJBIQa62TF0Kgc" />
-   </head>
-   <body>
-      <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
-         <div class="container">
-            <a class="navbar-brand" href="#">
-            <img src="https://avatars2.githubusercontent.com/u/53141505?s=60&v=4" class="rounded-circle"  alt="logo" style="width:40px;">
-            </a>
-			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggle" aria-controls="toggle" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-            <div class="collapse navbar-collapse" id="toggle">
-               <ul class="navbar-nav ml-auto">
-                  <li class="nav-item active">
-                     <a class="nav-link" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="progetti.html">I miei progetti</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="collab.html">Progetti a cui ho lavorato</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="stampa3d.html">Stampa 3D</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="contact.html">Contatti</a>
-                  </li>
-               </ul>
-            </div>
-         </div>
-      </nav>
-      <header>
-         <div id="carousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-               <li data-target="#carousel" data-slide-to="0" class="active"></li>
-               <li data-target="#carousel" data-slide-to="1"></li>
-               <li data-target="#carousel" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-               <!-- Slide One - Set the background image for this slide in the line below -->
-               <div class="carousel-item active mask rgba-black-strong" style="background-image: url('img/1.jpg')">
-                  <div class="carousel-caption d-none d-md-block ">
-                     <h2 class="display-4">Servizio di Stampa 3d</h2>
-                     <p class="lead">Contattami per maggiori informazioni</p>
-                  </div>
-               </div>
-               <!-- Slide Two - Set the background image for this slide in the line below -->
-               <div class="carousel-item" style="background-image: url('img/2.jpg')">
-                  <div class="carousel-caption d-none d-md-block mask rgba-black-strong">
-                     <h2 class="display-4">Laser</h2>
-                     <p class="lead">Incisione taglio con laser</p>
-                  </div>
-               </div>
-               <!-- Slide Three - Set the background image for this slide in the line below -->
-               <div class="carousel-item mask rgba-black-strong" style="background-image: url('img/3.jpg')">
-                  <div class="carousel-caption d-none d-md-block mask rgba-black-strong">
-                     <h2 class="display-4">SitiWeb</h2>
-                     <p class="lead">Sviluppo e gestione di siti web</p>
-                  </div>
-               </div>
-            </div>
-            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-            </a>
-         </div>
-      </header>
-	<div class="cente">
-      <div class="main  main-raised ">
-         <section id="features">
-            <div class="container">
-                  <div class="alicenter">
-                     <h2>I nostri Servizi:</h2>
-                     <h5>Posso fornire molteplici servizi inerenti alla stampa 3d, incisioni laser o assistenza ai computer</h5>
-                  </div>
-			   </div>
-			   <div class="container">
-               <div class="center-content">
-                  <div class="row">
-                     <div class="col-xs-12 col-md-4 feature-box">
-                        <div class="iconblock">
-                           <a href="#">
-                              <div class="icon" style="color:#e91e63">
-                                 <i class="fa fa-cube"></i>
-                              </div>
-                              <h4 class="info-title">Stampa 3d</h4>
-                           </a>
-                           <p>Hai un progetto ma non sai come realizzarlo? Forniscici il file .stl o .obj dell'oggetto e spiegaci le tue esigenze, verrai contattato per il preventivo.</p>
-                        </div>
-                     </div>
-                     <div class="col-xs-12 col-md-4 feature-box">
-                        <div class="iconblock">
-                           <a href="#">
-                              <div class="icon" style="color:#00bcd4">
-                                 <i class="fa fa-check"></i>
-                              </div>
-                              <h4 class="info-title">Progettazione</h4>
-                           </a>
-                           <p>Hai un idea ma non hai le capacità di realizzarlo? non temere, contattaci via email e spiegaci la tua idea, progetteremo per te il pezzo che avevi in mente.</p>
-                        </div>
-                     </div>
-                     <div class="col-xs-12 col-md-4 feature-box">
-                        <div class="iconblock">
-                           <a href="#">
-                              <div class="icon" style="color:#4caf50">
-                                 <i class="fa fa-globe"></i>
-                              </div>
-                              <h4 class="info-title">Sito Web</h4>
-                           </a>
-                           <p>Hai un piccola-media attività e vuoi essere più conosciuto? Affidaci il compito di progettare il tuo sito</p>
-                        </div>
-                     </div>
-                     <div class="col-xs-12 col-md-4 feature-box">
-                        <div class="iconblock">
-                           <a href="#">
-                              <div class="icon" style="color:#727272">
-                                 <i class="fa fa-puzzle-piece"></i>
-                              </div>
-                              <h4 class="info-title">Riparazione stampanti 3d</h4>
-                           </a>
-                           <p>Hai acquistato una stampante 3d, ma non riesci ancora a farla funzionare.. tranquillo, è normale, soprattutto se si è alle prime armi, un servizio che offriamo è proprio quello di assistenza, sia di tipo hardware che software.</p>
-                        </div>
-                     </div>
-                     <div class="col-xs-12 col-md-4 feature-box">
-                        <div class="iconblock">
-                           <a href="#">
-                              <div class="icon" style="color:#eeee22">
-                                 <i class="fa fa-heart"></i>
-                              </div>
-                              <h4 class="info-title"> Realizza le tue idee</h4>
-                           </a>
-                           <p>Hai in mente un prodotto, magari innovativo, ma non hai le capacità o il tempo di realizzarlo, Un servizio ulteriore è dedicato a questo, progettazione e realizzazione delle tue idee</p>
-                        </div>
-                     </div>
-                     <div class="col-xs-12 col-md-4 feature-box">
-                        <div class="iconblock">
-                           <a href="#">
-                              <div class="icon" style="color:#4ccc1a">
-                                 <i class="fa fa-anchor"></i>
-                              </div>
-                              <h4 class="info-title">Consulenza</h4>
-                           </a>
-                           <p>Vorresti avvicinarti al mondo della stampa 3d ma non sai da che parte cominciare? Non preoccuparti possiamo indirizzarti sulla scelta più conveniente per la tua attività in base alle tue esigenze</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-			   </div>
-            </div>
-	       </div>
-         </section>
-      </div> 
-      <footer class="page-footer font-small special-color-dark pt-4">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12 py-5">
-                  <div class="mb-5 flex-center">
-                     <a class="ig-ic" href="https://www.instagram.com/3dvolt/">
-                     <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-                     </a>
-                     <a class="git-ic" href="https://github.com/3dvolt/">
-                     <i class="fab fa-github fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-                     </a>
-                     <a class="thin-ic" href="https://www.thingiverse.com/3dVolt/designs">
-                     <i class="fas fa-cube fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                     </a>
-                     <a class="yt-ic" href="https://www.youtube.com/channel/UCJb40kTKsTMtbw-VCqrC3Gg">
-                     <i class="fab fa-youtube fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-                     </a>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="footer-copyright text-center py-3">© 2019 Copyright:
-            <a>3Dvolt</a>
-         </div>
-      </footer>
-   </body>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
 </html>
