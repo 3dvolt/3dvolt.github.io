@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dvolt</title>
+
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+
+<body>
+
+    <div id="pageloader" class="pageloader is-left-to-right is-theme"></div>
+    <div id="infraloader" class="infraloader is-active"></div>    
+    <div class="roadmap-wrapper">
+        <!-- Landing page Hero -->
+        <section class="hero is-medium">
+            <div class="hero-head">
+    
+                <!-- Cloned navbar -->
+                <!-- Cloned navbar that comes in on scroll -->
+                <nav x-data="initNavbar()"  x-on:scroll.window="scroll()" id="navbar-clone" class="navbar is-fixed is-dark" :class="{
+                        'is-active': scrolled,
+                        '': !scrolled
+                    }">
+                    <div class="container">
+                        <!-- Brand -->
+                        <div class="navbar-brand">
+                            <a href="index.html" class="navbar-item">
+                                <img class="rotating" src="/img/logo/logo.png" alt="">
+                                <span class="brand-name">diegovolt</span>
+                            </a>
+                            <!-- Responsive toggle -->
+                            <div class="navbar-burger" @click="openMobileMenu()">
+                                <div class="menu-toggle">
+                                    <span class="icon-box-toggle" :class="{
+                                            'active': mobileOpen,
+                                            '': !mobileOpen
+                                        }">
+                                        <span class="rotate">
+                                            <i class="icon-line-top"></i>
+                                            <i class="icon-line-center"></i>
+                                            <i class="icon-line-bottom"></i>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Menu -->
+                        <div id="cloneNavbarMenu" class="navbar-menu" :class="{
+                                'is-active': mobileOpen,
+                                '': !mobileOpen
+                            }">
+                            <div class="navbar-end">
+                                <!-- Menu item -->
+                                <div class="navbar-item is-nav-link">
+                                    <a class="is-centered-responsive" href="index.html">Home</a>
+                                </div>
+                                <!-- Menu item -->
+                                <div class="navbar-item is-nav-link">
+                                    <a class="is-centered-responsive" href="roadmap.html">Roadmap</a>
+                                </div>
+                                <!-- Sign up -->
+                                <div class="navbar-item is-nav-link">
+                                    <a class="is-centered-responsive button k-button k-primary raised has-gradient" href="https://t.me/Voltpwr" target="_blank">
+                                        <img class="telegram" src="/img/logo/telegram.svg" alt="">
+                                        Telegram
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <!-- /Cloned navbar -->
+                <!-- Static navbar -->
+                <!-- Static navbar -->
+                <nav x-data="initNavbar()" class="navbar is-light" :class="{
+                        'is-dark-mobile': mobileOpen,
+                        '': !mobileOpen
+                    }">
+                    <div class="container">
+                        <!-- Brand -->
+                        <div class="navbar-brand">
+                            <a href="index.html" class="navbar-item">
+                                <img class="rotating" src="/img/logo/logo.png" alt="">
+                                <span class="brand-name">diegovolt</span>
+                            </a>
+                            <!-- Responsive toggle -->
+                            <div class="navbar-burger" @click="openMobileMenu()">
+                                <div class="menu-toggle">
+                                    <span class="icon-box-toggle" :class="{
+                                            'active': mobileOpen,
+                                            '': !mobileOpen
+                                        }">
+                                        <span class="rotate">
+                                            <i class="icon-line-top"></i>
+                                            <i class="icon-line-center"></i>
+                                            <i class="icon-line-bottom"></i>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Menu -->
+                        <div id="navbarMenu" class="navbar-menu light-menu" :class="{
+                                'is-active': mobileOpen,
+                                '': !mobileOpen
+                            }">
+                            <div class="navbar-end">
+                                <!-- Menu item -->
+                                <div class="navbar-item is-nav-link">
+                                    <a class="is-centered-responsive" href="index.html">Home</a>
+                                </div>
+                                <!-- Menu item -->
+                                <div class="navbar-item is-nav-link">
+                                    <a class="is-centered-responsive" href="roadmap.html">Roadmap</a>
+                                </div>
+                                <!-- Sign up -->
+                                <div class="navbar-item">
+                                    <a class="button k-button k-primary raised has-gradient" href="https://t.me/Voltpwr" target="_blank">
+                                        <img class="telegram" src="/img/logo/telegram.svg" alt="">
+                                        Telegram
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <!-- /Static navbar -->
+            </div>
+    
+            <div class="hero-body has-text-centered">
+                <div class="columns">
+                    <div class="column is-6 is-offset-3">
+                        <div class="roadmap-image">
+                            <img src="/img/illustrations/world.svg">
+                        </div>
+                        <h1 class="title is-2 is-light is-semibold is-spaced main-title">work map</h1>
+                        <h2 class="subtitle is-5 is-light is-thin">
+                            &#x1F30D;   Here Is The Description Of Project That I Work On Since I Start My Journey in 2018 &#x1F30D;
+                        </h2>
+                        <!-- CTA -->
+                        <p>
+                            <a href="#roadmap" class="button k-button k-primary raised has-gradient is-fat is-bold">
+                                <span class="text">More details</span>
+                                <span class="front-gradient"></span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section x-data="initRoadmap()" x-init="setupRoadmap()" id="roadmap" class="main-timeline">
+            <ul>
+                <li>
+                    <div>
+                        <span class="item-title">Animatronic Characters</span>
+                        <time>2018</time> 
+                        <span class="item-content">
+                            Description: Developed the firmware and the 3d model for the management of moving parts in public-oriented animatronic characters.
+                        </span>
+                        <span class="more">
+                            Technologies: Arduino, CAD
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="item-title">Kiosk for instant photos</span>
+                        <time>2019</time> 
+                        <span class="item-content">
+                            Description: Creation of firmware for Kiosk with the possibility of taking instantaneous or local images for printing in real time
+                        </span>
+                        <span class="more">
+                            Technologies: Raspberry, Python
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="item-title">Survelliance Camera</span>
+                        <time>2019</time> 
+                        <span class="item-content">
+                            Description: Creation of a small graphic interface with webcam and computer vision management for identifying people. webcam positioned with two moving axes with management of notifications and historical logs.
+                        </span>
+                        <span class="more">
+                            Technologies: Raspberry, Python, Html
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="item-title">Input counter display</span>
+                        <time>2020</time> 
+                        <span class="item-content">
+                            Description: A device was created on commission which, with attached sensors, would detect the count of people present in a place and the passage of them. its integrated backend for management by an operator.
+                        </span>
+                        <span class="more">
+                            Technologies: Raspberry, Python, Javascript
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="item-title">Prototype Realization</span>
+                        <time>2020</time> 
+                        <span class="item-content">
+                            Description: Realization of 3d models for a new IOT communication device, creation of the first POC and MVP with rapid prototyping technology and application development based on Android
+                        </span>
+                        <span class="more">
+                            Technologies: CAD, Linux
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="item-title">Interactive Kiosk</span>
+                        <time>2020</time> 
+                        <span class="item-content">
+                            Description: Firmware development for Raspberry for installation on interactive Kiosk with customizable website with backend and remotely modifiable multimedia resources.
+                        </span>
+                        <span class="more">
+                            Technologies: Javascript, Python , Raspberry
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="item-title">Website Development</span>
+                        <time>2021</time> 
+                        <span class="item-content">
+                            Description: Creation and administration of a website for the management of data connected to the public wikipedia database, representation and management of them.
+                        </span>
+                        <span class="more">
+                            Technologies: Javascript, Angular
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="item-title">Cocktail Making Machine</span>
+                        <time>2021</time> 
+                        <span class="item-content">
+                            Description: Creation of firmware compatible with Raspberry board with remote management UI to mix and create cocktails.
+                        </span>
+                        <span class="more">
+                            Technologies: Python, Javascript, Raspberry
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="item-title">Sport Statistics and data aggregation</span>
+                        <time>2021</time> 
+                        <span class="item-content">
+                            Description: For startups in the sports sector, created APIs and backends, scripts for data aggregation, analysis display and dynamic representations with reports.
+                        </span>
+                        <span class="more">
+                            Technologies: Python, Numpy, Pandas, Flask
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="item-title">Blockchain IOT platform</span>
+                        <time>2021</time> 
+                        <span class="item-content">
+                            Description: In the role of Tech Lead directed by a team of developers, created a platform for the IOT management of sensors connected to the blockchain and related reward in tokens for users
+                        </span>
+                        <span class="more">
+                            Technologies: Javascript, vuejs, Firebase, Sql
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="item-title">Visits Management Program</span>
+                        <time>2022</time> 
+                        <span class="item-content">
+                            Description: Project collaboration for the management of medical examinations and relative firmware of the proprietary device used
+                        </span>
+                        <span class="more">
+                            Technologies: Javascript, Electron, Python, Raspberry
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="item-title">DAPP Solana project</span>
+                        <time>2022</time> 
+                        <span class="item-content">
+                            Description: Developed the webapp part with smartcontract integration on the Solana blockchain for a startup ,the project participated in Solana HakerHouse Hackatolon with good results.
+                        </span>
+                        <span class="more">
+                            Technologies: Rust, Typescript, Javascript
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="item-title">Sensor Management Platform</span>
+                        <time>2022</time> 
+                        <span class="item-content">
+                        Description: </b> Small web page for remote IOT device management, Database with API layer
+                        protected by authentication and tokens. Device firmware managed by Raspberry Pi with management possibility
+                        physically via touch display or remotely via Websocket.</span>
+    
+                        <span class="more">
+                            Technologies: </b> Raspberry Pi, Javascript, Vuejs, Python                    </span>
+                    </div>
+                </li>
+            <li>
+                <div>
+                <span class="item-title"> And now? </span> </br>
+                <span > We could do the next project together. </span> </br>
+                <span > Consultancy for the migration to the Web3 and Development on the Web and Blockchain </span>
+            </div>
+        </li>
+            </ul>
+        </section>
+    
+        <section>
+            <div class="roadmap-end"> 
+                <img src="/img/134.png" alt="">
+            </div>
+        </section>
+    
+    </div>
+    <footer class="krypton-footer">
+        <div class="container">
+            <!-- Logo -->
+            <div class="footer-logo">
+                <a href="#">
+                    <img class="rotating" src="/img/logo/logo.png" alt="">
+                    <div class="brand-name">diegovolt</div>
+                    <div class="brand-subtitle">I'm currently developing ideas</div>
+                </a>
+            </div>
+            
+            <!-- Columns -->
+            <div class="columns footer-columns is-vcentered">
+                <div class="column is-4">
+                    <!-- Links group -->
+                    <ul class="footer-links">
+                        <li>
+                            <a href="./roadmap.html">Roadmap</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Newsletter -->
+                <div class="column is-4">
+                    <div class="subscribe-block">
+    
+                    </div>
+                </div>
+                <!-- Links group -->
+                <div class="column is-4">
+                    <ul class="footer-links">
+                        <li>
+                            <a href="https://t.me/Voltpwr">Telegram</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <p class="k-copyright">© 2018-2022 | diegovolt ⚡ All Rights Reserved</p>
+            <br>
+        </div>
+        
+        <!-- Absolute image -->
+        <img class="solar-system" src="/img/bg/solar.svg" alt="">
+    </footer>    <!-- Back To Top Button -->
+    <div x-data="initBackToTop()" x-on:scroll.window="scroll($event)" @click="goTop($event)" id="backtotop"><a href="javascript:" :class="{
+        'visible': scrolled,
+        '': !scrolled
+    }"></a></div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./js/bundle.js"></script>
+
+</body>
+
+</html>
