@@ -16,6 +16,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  basePath: 'https://3dvolt.github.io/',
+  assetPrefix: 'https://3dvolt.github.io/',
   experimental: {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,
