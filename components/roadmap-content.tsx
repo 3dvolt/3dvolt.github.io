@@ -15,10 +15,10 @@ export function RoadmapContent() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-4xl font-bold text-white mb-4">Project History:</h1>
-            <p className="text-xl text-purple-200 mb-12">
-              🌍 Here is an overview of the projects I have worked on since beginning my journey in 2018.
-            </p>
+            <h1 className="text-4xl font-bold text-white mb-4">Projects Timeline: </h1>
+<p className="text-xl text-purple-200 mb-12">
+  🌍 Explore the key projects I've contributed to since embarking on my journey in 2018.
+</p>
 
             <div className="space-y-8">
               {[...projects].reverse().map((project, index) => (

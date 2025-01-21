@@ -31,7 +31,7 @@ export function Nav() {
                 pathname === "/roadmap" && "text-white"
               )}
             >
-              Roadmap
+              Projects Timeline
             </Link>
           </div>
         </div>

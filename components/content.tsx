@@ -45,8 +45,17 @@ export function Content() {
             variants={item}
             className="text-4xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-purple-200"
           >
-            Your Project developed directly from Italy 🤌
+            Keep it simple! 
           </motion.h1>
+
+
+          <motion.p 
+            variants={item}
+            className="text-xl md:text-3xl text-purple-200 mb-8"
+          >
+          your customized software solution
+          </motion.p>
+
           <motion.p 
             variants={item}
             className="text-xl md:text-3xl text-purple-200 mb-8"
