@@ -7,6 +7,7 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -16,8 +17,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: 'https://3dvolt.github.io/',
-  assetPrefix: 'https://3dvolt.github.io/',
+  basePath: '',
+  assetPrefix: '',
   experimental: {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,
