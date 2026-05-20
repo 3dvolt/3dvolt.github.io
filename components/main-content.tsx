@@ -11,7 +11,7 @@ export function MainContent() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowContent(true)
-    }, 2000)
+    }, 800)
     return () => clearTimeout(timer)
   }, [])
 

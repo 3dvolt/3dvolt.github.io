@@ -1,118 +1,125 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Code2, Database, Cpu, Brain, GitBranch, Bitcoin, PiIcon as Python } from 'lucide-react'
 
-const container = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1,
-      delayChildren: 0.2,
-    }
-  }
+const fadeUp = {
+  hidden: { y: 20, opacity: 0 },
+  show: { y: 0, opacity: 1, transition: { duration: 0.45, ease: 'easeOut' } },
 }
 
-const item = {
-  hidden: { y: 20, opacity: 0 },
-  show: { y: 0, opacity: 1 }
+const stagger = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1, transition: { staggerChildren: 0.07 } },
 }
 
 const categories = [
   {
-    icon: <Code2 className="w-6 h-6" />,
-    name: "Frontend & Backend",
-    techs: ["JavaScript", "TypeScript", "Vue.js", "Node.js"]
+    label: 'Frontend',
+    color: 'text-sky-400',
+    pill: 'bg-sky-400/10 text-sky-300 border-sky-400/20',
+    techs: ['JavaScript', 'TypeScript', 'Vue.js', 'Angular', 'React Native'],
   },
   {
-    icon: <Database className="w-6 h-6" />,
-    name: "Databases",
-    techs: ["MongoDB", "SQL"]
+    label: 'Backend',
+    color: 'text-emerald-400',
+    pill: 'bg-emerald-400/10 text-emerald-300 border-emerald-400/20',
+    techs: ['Node.js', 'Python', 'Flask', 'REST APIs', 'WebSocket'],
   },
   {
-    icon: <Cpu className="w-6 h-6" />,
-    name: "Hardware",
-    techs: ["Raspberry", "Arduino"]
+    label: 'Databases',
+    color: 'text-orange-400',
+    pill: 'bg-orange-400/10 text-orange-300 border-orange-400/20',
+    techs: ['MongoDB', 'SQL', 'Firebase'],
   },
   {
-    icon: <Python className="w-6 h-6" />,
-    name: "Data & ML",
-    techs: ["Python", "NumPy", "OpenCV"]
+    label: 'Hardware',
+    color: 'text-red-400',
+    pill: 'bg-red-400/10 text-red-300 border-red-400/20',
+    techs: ['Raspberry Pi', 'Arduino', 'ESP32', 'LoRaWAN', 'C++'],
   },
   {
-    icon: <Bitcoin className="w-6 h-6" />,
-    name: "Blockchain",
-    techs: ["Solana", "Rust"]
+    label: 'AI & Data',
+    color: 'text-yellow-400',
+    pill: 'bg-yellow-400/10 text-yellow-300 border-yellow-400/20',
+    techs: ['Python', 'NumPy', 'Pandas', 'OpenCV', 'RAG'],
   },
   {
-    icon: <GitBranch className="w-6 h-6" />,
-    name: "Version Control",
-    techs: ["Git", "GitHub", "GitLab"]
-  }
+    label: 'Blockchain',
+    color: 'text-violet-400',
+    pill: 'bg-violet-400/10 text-violet-300 border-violet-400/20',
+    techs: ['Solana', 'Rust', 'Web3', 'Smart Contracts'],
+  },
+  {
+    label: '3D & Design',
+    color: 'text-pink-400',
+    pill: 'bg-pink-400/10 text-pink-300 border-pink-400/20',
+    techs: ['CAD', '3D Printing', 'Rapid Prototyping'],
+  },
+  {
+    label: 'DevOps',
+    color: 'text-cyan-400',
+    pill: 'bg-cyan-400/10 text-cyan-300 border-cyan-400/20',
+    techs: ['Git', 'GitHub', 'Linux', 'Docker', 'Electron'],
+  },
 ]
 
 export function TechStack() {
   return (
-    <section className="py-16">
-      <motion.div
-        variants={container}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true }}
-        className="text-center mb-12"
-      >
-        <motion.h2 
-          variants={item} 
-          className="text-3xl md:text-4xl font-bold mb-4"
+    <section className="relative px-4 py-24 sm:py-32">
+      <div className="max-w-6xl mx-auto">
+        <motion.div
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: '-80px' }}
+          variants={stagger}
+          className="mb-14"
         >
-          Technology Stack
-        </motion.h2>
-        <motion.p 
-          variants={item}
-          className="text-purple-200 text-lg"
-        >
-          Here Is A List Of Technology Where I&apos;m Skilled:
-        </motion.p>
-      </motion.div>
-
-      <motion.div
-        variants={container}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true }}
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto px-4"
-      >
-        {categories.map((category, index) => (
-          <motion.div
-            key={index}
-            variants={item}
-            className="bg-purple-900/30 backdrop-blur-sm rounded-lg p-6 border border-purple-700/50 hover:bg-purple-800/30 transition-colors group"
+          <motion.p
+            variants={fadeUp}
+            className="text-violet-400 font-semibold text-xs sm:text-sm uppercase tracking-widest mb-3"
           >
-            <div className="flex items-center gap-3 mb-4">
-              <div className="p-2 bg-purple-700/30 rounded-lg text-purple-300 group-hover:text-purple-200 transition-colors">
-                {category.icon}
+            Skills
+          </motion.p>
+          <motion.h2
+            variants={fadeUp}
+            className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight"
+          >
+            Technology Stack
+          </motion.h2>
+        </motion.div>
+
+        <motion.div
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: '-40px' }}
+          variants={stagger}
+          className="space-y-5"
+        >
+          {categories.map((cat) => (
+            <motion.div
+              key={cat.label}
+              variants={fadeUp}
+              className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-8 py-3 border-b border-white/[0.05] last:border-0"
+            >
+              <span
+                className={`text-xs font-bold uppercase tracking-widest shrink-0 w-20 ${cat.color}`}
+              >
+                {cat.label}
+              </span>
+              <div className="flex flex-wrap gap-2">
+                {cat.techs.map((tech) => (
+                  <span
+                    key={tech}
+                    className={`px-3 py-1 text-xs font-medium rounded-full border ${cat.pill}`}
+                  >
+                    {tech}
+                  </span>
+                ))}
               </div>
-              <h3 className="font-semibold text-lg text-purple-200 group-hover:text-white transition-colors">
-                {category.name}
-              </h3>
-            </div>
-            <div className="flex flex-wrap gap-2">
-              {category.techs.map((tech, techIndex) => (
-                <motion.span
-                  key={techIndex}
-                  initial={{ scale: 1 }}
-                  whileHover={{ scale: 1.05 }}
-                  className="px-3 py-1 bg-purple-800/40 rounded-full text-sm text-purple-200 hover:text-white transition-colors"
-                >
-                  {tech}
-                </motion.span>
-              ))}
-            </div>
-          </motion.div>
-        ))}
-      </motion.div>
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
     </section>
   )
 }
-
