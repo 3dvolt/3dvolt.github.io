@@ -145,6 +145,27 @@ export const projects = [
     description: "Developed a SaaS platform for managing AI chatbot based on RAG",
     technologies: ["Node.js", "JavaScript", "Angular.js", "Python"],
     icon: "🤖"
+  },
+  {
+    year: 2025,
+    title: "CAD File Generation Automation",
+    description: "Built a Node.js automation pipeline for a manufacturing company to programmatically generate CAD files from product parameters, reducing manual design time and standardising output across production lines.",
+    technologies: ["Node.js", "TypeScript", "CAD", "REST APIs"],
+    icon: "⚙️"
+  },
+  {
+    year: 2025,
+    title: "AI Company Analysis Platform",
+    description: "Developed a full-stack platform for a technology hub to run AI-driven analysis on incubated companies. Built a Node.js backend and React frontend with database integrations, automated data ingestion, and report generation for investors and programme managers.",
+    technologies: ["Node.js", "React", "TypeScript", "Python", "SQL", "AI/LLM"],
+    icon: "🏢"
+  },
+  {
+    year: 2026,
+    title: "AWS API Infrastructure & Backend",
+    description: "Managing cloud infrastructure and developing backend services on AWS for a startup, including API gateway configuration, serverless functions, CI/CD pipelines, and scalable microservice architecture.",
+    technologies: ["AWS", "Node.js", "TypeScript", "Lambda", "API Gateway", "CI/CD"],
+    icon: "☁️"
   }
 ]
 
