@@ -69,25 +69,34 @@ const config: Config = {
   		},
   		keyframes: {
   			'accordion-down': {
-  				from: {
-  					height: '0'
-  				},
-  				to: {
-  					height: 'var(--radix-accordion-content-height)'
-  				}
+  				from: { height: '0' },
+  				to: { height: 'var(--radix-accordion-content-height)' },
   			},
   			'accordion-up': {
-  				from: {
-  					height: 'var(--radix-accordion-content-height)'
-  				},
-  				to: {
-  					height: '0'
-  				}
-  			}
+  				from: { height: 'var(--radix-accordion-content-height)' },
+  				to: { height: '0' },
+  			},
+  			'orb-1': {
+  				'0%, 100%': { transform: 'translate(0px, 0px) scale(1)' },
+  				'33%':       { transform: 'translate(50px, -40px) scale(1.07)' },
+  				'66%':       { transform: 'translate(-30px, 45px) scale(0.93)' },
+  			},
+  			'orb-2': {
+  				'0%, 100%': { transform: 'translate(0px, 0px) scale(1)' },
+  				'40%':      { transform: 'translate(-55px, 30px) scale(0.92)' },
+  				'75%':      { transform: 'translate(35px, -50px) scale(1.08)' },
+  			},
+  			'orb-3': {
+  				'0%, 100%': { transform: 'translate(0px, 0px) scale(1)' },
+  				'50%':      { transform: 'translate(30px, 55px) scale(1.12)' },
+  			},
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
+  			'accordion-up':   'accordion-up 0.2s ease-out',
+  			'orb-1': 'orb-1 20s ease-in-out infinite',
+  			'orb-2': 'orb-2 25s ease-in-out infinite',
+  			'orb-3': 'orb-3 30s ease-in-out infinite',
   		}
   	}
   },
